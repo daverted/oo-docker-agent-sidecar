@@ -16,4 +16,7 @@ RUN mkdir -pv $TAKIPI_TMP_DIR \
     && mv -v $TAKIPI_TMP_DIR /opt \
     && rm -rfv /tmp/takipi-agent-latest.tar.gz
 
+# making sure everybody can read/write
+RUN chmod -R a+rw /opt/takipi/resources
+
 ENTRYPOINT tail -f /dev/null
