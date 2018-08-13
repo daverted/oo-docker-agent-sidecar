@@ -1,4 +1,4 @@
-FROM timveil/oo-docker-base-alpine
+FROM timveil/oo-docker-base:alpine
 
 LABEL maintainer="tjveil@gmail.com"
 

@@ -10,17 +10,17 @@ This image contains an [OverOps](http://www.overops.com) Agent only.  This is us
 #### Building the Image
 
 ```bash
-docker build --no-cache -t timveil/oo-docker-agent-sidecar:latest .
+docker build --no-cache -t timveil/oo-docker-agent-sidecar:alpine .
 ```
 
 #### Publishing the Image
 
 ```bash
-docker push timveil/oo-docker-agent-sidecar:latest
+docker push timveil/oo-docker-agent-sidecar:alpine
 ```
 
 #### Running the Image
  
 ```bash
-docker run -it timveil/oo-docker-agent-sidecar
+docker run -it timveil/oo-docker-agent-sidecar:alpine
 ```
