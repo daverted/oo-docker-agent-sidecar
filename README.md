@@ -22,5 +22,5 @@ docker push timveil/oo-docker-agent-sidecar:latest
 #### Running the Image
  
 ```bash
-docker run -it timveil/oo-docker-agent-sidecar
+docker run -it timveil/oo-docker-agent-sidecar:latest
 ```
