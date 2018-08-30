@@ -3,7 +3,6 @@ FROM openjdk:8-jdk-slim
 LABEL maintainer="tjveil@gmail.com"
 
 ENV TAKIPI_TMP_DIR=/tmp/takipi
-ENV TAKIPI_AGENT_HOME=/opt/takipi
 
 ENV TIMEZONE=America/New_York
 RUN ln -snf /usr/share/zoneinfo/$TIMEZONE /etc/localtime && echo $TIMEZONE > /etc/timezone
