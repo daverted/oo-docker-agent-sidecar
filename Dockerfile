@@ -12,6 +12,6 @@ RUN mkdir -pv $TAKIPI_TMP_DIR \
     && rm -rfv /tmp/takipi-agent-latest.tar.gz
 
 # making sure everybody can read/write
-RUN chmod -R a+rw /opt/takipi/resources
+RUN mkdir -pv /opt/takipiresources/Spider/agents && chmod -R 777 /opt/takipi/resources
 
 ENTRYPOINT tail -f /dev/null
